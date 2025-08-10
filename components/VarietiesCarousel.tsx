@@ -8,104 +8,100 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
-const fruitVarieties = [
+const mangoVarieties = [
   {
     id: 1,
-    name: "Amrapali Mango",
-    category: "Mango",
-    description: "A dwarf variety perfect for high-density planting with excellent fruit quality and regular bearing habit.",
-    features: ["Dwarf variety", "Regular bearing", "Rich flavor", "Disease resistant"],
+    name: "Amrapali",
+    variety: "Dwarf Variety",
+    description: "A dwarf hybrid variety developed by IARI, New Delhi. Perfect for high-density planting with excellent fruit quality, regular bearing habit, and resistance to diseases. Ideal for commercial orchards with limited space.",
+    features: ["Dwarf habit", "Regular bearing", "Rich flavor", "Disease resistant", "High density planting"],
     maturityPeriod: "June-July",
     yieldPotential: "15-20 kg/tree",
     commercialRating: 4.8,
-    image: "https://images.pexels.com/photos/2294471/pexels-photo-2294471.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
+    image: "https://images.pexels.com/photos/19333425/pexels-photo-19333425.jpeg",
     gradient: "from-orange-400 to-red-500",
     marketDemand: "High",
-    exportPotential: "Excellent"
+    exportPotential: "Excellent",
+    fruitWeight: "150-200g",
+    pulpContent: "75-80%"
   },
   {
     id: 2,
-    name: "Dashehari Mango",
-    category: "Mango",
-    description: "Premium quality mango variety known for its distinctive flavor and aroma, highly preferred in northern markets.",
-    features: ["Premium quality", "Distinctive aroma", "Market favorite", "Good storage life"],
+    name: "Dashehari",
+    variety: "Premium Quality",
+    description: "Traditional premium quality mango variety from Uttar Pradesh, known for its distinctive flavor, aroma, and juicy pulp. Highly preferred in northern Indian markets and commands premium prices.",
+    features: ["Premium quality", "Distinctive aroma", "Juicy pulp", "Market favorite", "Good storage life"],
     maturityPeriod: "June-July",
     yieldPotential: "80-120 kg/tree",
     commercialRating: 4.7,
-    image: "https://images.pexels.com/photos/2294471/pexels-photo-2294471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image: "https://images.pexels.com/photos/30741640/pexels-photo-30741640.jpeg",
     gradient: "from-yellow-400 to-orange-500",
     marketDemand: "Very High",
-    exportPotential: "Good"
+    exportPotential: "Good",
+    fruitWeight: "100-150g",
+    pulpContent: "70-75%"
   },
   {
     id: 3,
-    name: "Allahabad Safeda Guava",
-    category: "Guava",
-    description: "Round, medium-sized fruits with white flesh, sweet taste and high nutritional value. Excellent for fresh consumption.",
-    features: ["White flesh", "High vitamin C", "Sweet taste", "Year-round bearing"],
-    maturityPeriod: "October-February",
-    yieldPotential: "25-35 kg/tree",
+    name: "Langra",
+    variety: "Traditional",
+    description: "One of the most popular traditional varieties from Uttar Pradesh. Known for its excellent taste, fiber-less pulp, and good keeping quality. Highly suitable for both domestic and export markets.",
+    features: ["Fiber-less pulp", "Excellent taste", "Good keeping quality", "Traditional favorite", "Export suitable"],
+    maturityPeriod: "July-August",
+    yieldPotential: "60-80 kg/tree",
     commercialRating: 4.6,
-    image: "https://images.pexels.com/photos/6157049/pexels-photo-6157049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    gradient: "from-green-400 to-emerald-500",
+    image: "https://images.pexels.com/photos/30893227/pexels-photo-30893227.jpeg",
+    gradient: "from-green-400 to-yellow-500",
     marketDemand: "High",
-    exportPotential: "Moderate"
+    exportPotential: "Excellent",
+    fruitWeight: "200-250g",
+    pulpContent: "78-82%"
   },
   {
     id: 4,
-    name: "Lalit Guava",
-    category: "Guava",
-    description: "Pink flesh variety with attractive appearance and excellent taste. Highly suitable for processing and value addition.",
-    features: ["Pink flesh", "Processing quality", "Attractive appearance", "Good shelf life"],
-    maturityPeriod: "November-January",
-    yieldPotential: "30-40 kg/tree",
+    name: "Chausa",
+    variety: "Late Season",
+    description: "Premium late season variety with excellent flavor and aroma. Large sized fruits with attractive appearance and good shelf life. Highly valued in both domestic and international markets.",
+    features: ["Large fruit size", "Late season", "Excellent flavor", "Good shelf life", "Premium quality"],
+    maturityPeriod: "July-August",
+    yieldPotential: "70-100 kg/tree",
     commercialRating: 4.5,
-    image: "https://images.pexels.com/photos/4750270/pexels-photo-4750270.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    gradient: "from-pink-400 to-rose-500",
+    image: "https://images.pexels.com/photos/8446853/pexels-photo-8446853.jpeg",
+    gradient: "from-yellow-300 to-orange-400",
     marketDemand: "Growing",
-    exportPotential: "Good"
+    exportPotential: "Good",
+    fruitWeight: "250-350g",
+    pulpContent: "72-76%"
   },
   {
     id: 5,
-    name: "Kinnow Mandarin",
-    category: "Citrus",
-    description: "Juicy citrus variety with excellent keeping quality and high juice content. Perfect for commercial cultivation.",
-    features: ["High juice content", "Good keeping quality", "Easy peeling", "Rich in vitamin C"],
-    maturityPeriod: "December-February",
+    name: "Mallika",
+    variety: "Hybrid",
+    description: "High-quality hybrid variety developed by IARI, combining the best traits of Neelum and Dashehari. Regular bearer with excellent fruit quality and good resistance to diseases and pests.",
+    features: ["Hybrid vigor", "Regular bearing", "Disease resistant", "Excellent quality", "Good shipper"],
+    maturityPeriod: "June-July",
     yieldPotential: "40-60 kg/tree",
     commercialRating: 4.4,
-    image: "https://images.pexels.com/photos/327098/pexels-photo-327098.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1",
-    gradient: "from-orange-300 to-yellow-500",
+    image: "https://images.pexels.com/photos/2667738/pexels-photo-2667738.jpeg",
+    gradient: "from-orange-300 to-red-400",
     marketDemand: "Stable",
-    exportPotential: "Excellent"
-  },
-  {
-    id: 6,
-    name: "Pusa Kalyanpur Baramasi",
-    category: "Lemon",
-    description: "Year-round bearing lemon variety with high acid content and excellent commercial viability for juice industry.",
-    features: ["Year-round bearing", "High acid content", "Industrial use", "Drought tolerant"],
-    maturityPeriod: "Throughout year",
-    yieldPotential: "150-200 fruits/tree",
-    commercialRating: 4.3,
-    image: "https://images.pexels.com/photos/1414130/pexels-photo-1414130.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    gradient: "from-yellow-300 to-lime-400",
-    marketDemand: "Steady",
-    exportPotential: "Moderate"
+    exportPotential: "Excellent",
+    fruitWeight: "180-220g",
+    pulpContent: "74-78%"
   }
 ]
 
-const categoryFilters = ["All", "Mango", "Guava", "Citrus", "Lemon"]
+const varietyFilters = ["All Varieties", "Dwarf Variety", "Premium Quality", "Traditional", "Late Season", "Hybrid"]
 
 export default function VarietiesCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [selectedCategory, setSelectedCategory] = useState("All")
+  const [selectedVariety, setSelectedVariety] = useState("All Varieties")
   const [autoPlay, setAutoPlay] = useState(true)
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.1 })
 
-  const filteredVarieties = fruitVarieties.filter(variety => 
-    selectedCategory === "All" || variety.category === selectedCategory
+  const filteredVarieties = mangoVarieties.filter(variety => 
+    selectedVariety === "All Varieties" || variety.variety === selectedVariety
   )
 
   // Auto-play functionality
@@ -202,7 +198,7 @@ export default function VarietiesCarousel() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-4xl md:text-5xl font-bold text-[#14532d] mb-6"
           >
-            Varieties for Commercialization
+            Premium Mango Varieties
           </motion.h2>
 
           <motion.p
@@ -211,37 +207,37 @@ export default function VarietiesCarousel() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl text-gray-700 leading-relaxed"
           >
-            Explore our scientifically developed fruit varieties with exceptional commercial potential, 
-            designed for modern agricultural practices and market demands.
+            Discover our scientifically developed mango varieties with exceptional commercial potential, 
+            perfect for modern orchard management and premium market segments.
           </motion.p>
         </motion.div>
 
-        {/* Category Filters */}
+        {/* Variety Type Filters */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.5 }}
           className="flex flex-wrap justify-center gap-3 mb-12"
         >
-          {categoryFilters.map((category, index) => (
+          {varietyFilters.map((variety, index) => (
             <motion.button
-              key={category}
+              key={variety}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.4, delay: 0.6 + (index * 0.1) }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => {
-                setSelectedCategory(category)
+                setSelectedVariety(variety)
                 setCurrentIndex(0)
               }}
               className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                selectedCategory === category
+                selectedVariety === variety
                   ? 'bg-[#14532d] text-white shadow-lg shadow-[#14532d]/25'
                   : 'bg-white text-[#14532d] border-2 border-[#14532d]/20 hover:border-[#14532d] hover:bg-[#14532d]/5'
               }`}
             >
-              {category}
+              {variety}
             </motion.button>
           ))}
         </motion.div>
@@ -282,7 +278,7 @@ export default function VarietiesCarousel() {
           <div className="flex justify-center items-center min-h-[600px] px-8">
             <AnimatePresence mode="wait">
               <motion.div
-                key={`${selectedCategory}-${currentIndex}`}
+                key={`${selectedVariety}-${currentIndex}`}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -316,7 +312,7 @@ export default function VarietiesCarousel() {
                         {/* Floating Badges */}
                         <div className="absolute top-4 left-4 flex gap-2">
                           <Badge className="bg-white/90 text-[#14532d] font-semibold">
-                            {variety.category}
+                            {variety.variety}
                           </Badge>
                           <Badge className={`font-semibold ${getDemandColor(variety.marketDemand)}`}>
                             {variety.marketDemand} Demand
@@ -357,9 +353,9 @@ export default function VarietiesCarousel() {
                             <div className="flex items-center justify-center mb-1">
                               <Sun className="text-[#facc15]" size={18} />
                             </div>
-                            <div className="text-xs text-gray-600 mb-1">Maturity</div>
+                            <div className="text-xs text-gray-600 mb-1">Fruit Weight</div>
                             <div className="text-sm font-semibold text-[#14532d]">
-                              {variety.maturityPeriod}
+                              {variety.fruitWeight}
                             </div>
                           </div>
                           
@@ -367,9 +363,9 @@ export default function VarietiesCarousel() {
                             <div className="flex items-center justify-center mb-1">
                               <TrendingUp className="text-[#16a34a]" size={18} />
                             </div>
-                            <div className="text-xs text-gray-600 mb-1">Yield</div>
+                            <div className="text-xs text-gray-600 mb-1">Pulp Content</div>
                             <div className="text-sm font-semibold text-[#14532d]">
-                              {variety.yieldPotential}
+                              {variety.pulpContent}
                             </div>
                           </div>
                         </div>
@@ -447,7 +443,7 @@ export default function VarietiesCarousel() {
             className="bg-gradient-to-r from-[#14532d] to-[#16a34a] hover:from-[#0f3d21] hover:to-[#15803d] text-white px-8 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
           >
             <Award className="mr-2" size={20} />
-            Explore Commercial Opportunities
+            Explore Mango Cultivation Guide
           </Button>
         </motion.div>
       </div>

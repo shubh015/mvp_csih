@@ -21,7 +21,7 @@ const researchAreas = [
     title: "Sustainable Crop Farming",
     description:
       "Promoting eco-friendly and water-efficient practices in crop cultivation for long-term sustainability.",
-    image: "/images/Gemini_Generated_Image_vs5rqtvs5rqtvs5r.jpeg",
+    image: "https://images.pexels.com/photos/30741640/pexels-photo-30741640.jpeg",
   },
   {
     id: 3,

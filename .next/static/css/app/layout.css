@@ -1851,6 +1851,12 @@ video {
 .to-yellow-500 {
   --tw-gradient-to: #eab308 var(--tw-gradient-to-position);
 }
+.to-orange-400 {
+  --tw-gradient-to: #fb923c var(--tw-gradient-to-position);
+}
+.to-red-400 {
+  --tw-gradient-to: #f87171 var(--tw-gradient-to-position);
+}
 .bg-repeat {
   background-repeat: repeat;
 }

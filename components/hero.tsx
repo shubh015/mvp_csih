@@ -15,9 +15,10 @@ export default function Hero() {
 
   // High-quality Pexels images - horticulture and orchard themed
   const images = [
-    "https://images.pexels.com/photos/96715/pexels-photo-96715.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+    "https://images.pexels.com/photos/23592194/pexels-photo-23592194.jpeg",
     "/images/mango-orchard-hero.jpeg",
-    "https://images.pexels.com/photos/5945849/pexels-photo-5945849.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop",
+    
+    "https://images.pexels.com/photos/18795768/pexels-photo-18795768.jpeg"
   ]
   const { scrollYProgress } = useScroll({
     target: containerRef,

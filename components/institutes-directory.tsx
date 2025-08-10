@@ -18,7 +18,7 @@ const institutes = [
     location: "Lucknow, Uttar Pradesh",
     region: "North",
     type: "Crop Research",
-    image: "/images/Gemini_Generated_Image_rv48odrv48odrv48.jpeg",
+    image: "https://images.pexels.com/photos/30741640/pexels-photo-30741640.jpeg",
     description:
       "The Central Institute for Subtropical Horticulture (CISH) was started as Central Mango Research Station on September 4, 1972 under the aegis of the Indian Institute of Horticulture Research.",
     contact: {
