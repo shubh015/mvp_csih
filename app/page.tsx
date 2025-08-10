@@ -11,6 +11,7 @@ import Header from "@/components/header"
 import ScrollIndicator from "@/components/scroll-indicator"
 import ResearchProjectsPage from "@/components/ResearchProjectsPage"
 import NewsPage from "@/components/NewsPage"
+import VarietiesCarousel from "@/components/VarietiesCarousel"
 // Import your NewsEventsPage component here
 // import NewsEventsPage from "@/components/NewsEventsPage"
 
@@ -47,6 +48,7 @@ export default function Home() {
             <Hero />
             <About />
             <ResearchHighlights onViewAllProjects={handleShowResearchProjects} />
+            <VarietiesCarousel/>
             <InstitutesDirectory />
             <NewsEvents onNewAllProjects ={handleShowNewsEvents} />
           </>
